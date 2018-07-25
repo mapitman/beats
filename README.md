@@ -36,5 +36,15 @@ make
 # if you want to install the binary in your $GOPATH/bin
 make install
 ```
+## Run it as a clock
 
+```sh
+watch -t -n1 "beats | figlet -k -f slant"
+   ______  _____ ___   ___
+  / ____ \|__  /|__ \ |__ \
+ / / __ `/ /_ < __/ / __/ /
+/ / /_/ /___/ // __/ / __/
+\ \__,_//____//____//____/
+ \____/
 
+```
