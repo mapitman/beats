@@ -7,9 +7,6 @@ import (
 )
 
 func main() {
-	var t = time.Now().UTC()
-	var beats = internettime.ConvertToBeats(t)
-	//var beats = int(float64(t.Second() + t.Minute() * 60 + (t.Hour() + 1) * 3600) / 86.4)
-	fmt.Printf("@%d", beats)
+	fmt.Printf("@%03d", internettime.ConvertToBeats(time.Now().UTC()))
 	fmt.Println()
 }
