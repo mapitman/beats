@@ -21,10 +21,10 @@ alias beats="docker run --rm mapitman/beats"
 
 ```sh
 git clone git@github.com:mapitman/beats
-make docker
+just docker
 
 # run the container to test it out
-make run
+just run
 ```
 
 ## Build natively
@@ -34,7 +34,7 @@ git clone git@github.com:mapitman/beats
 make
 
 # if you want to install the binary in your $GOPATH/bin
-make install
+just install
 ```
 ## Run it as a clock
 
